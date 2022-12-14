@@ -5,10 +5,10 @@
 *Very first thing: Of course you should have a computer or laptop*😁
 
 To begin with, make sure python is installed in your system.
-You can install  Python [Here]("https://www.python.org/downloads/")
+You can install  Python [Here](https://www.python.org/downloads/)
 Check if python is install by typing `python --version` in the terminal
 You should get something like this.
-!['python version']("https://github.com/sasankn7/smanagement/blob/main/static/images/python.png")
+!['python version'](static/images/python.png)
 
 ✔All good?😊
 >>Next
@@ -21,7 +21,7 @@ After installing the virtual environment, we need to create a virtual environmet
 
 Navigate to the folder where the project `course_management_system` is located.
 Your commandline should be something like this.
-!['venv']("https://github.com/sasankn7/smanagement/blob/main/static/images/venv.png")
+!['venv'](/static/images/venv.png)
 
 run, `python -m virtualenv venv`
 then activate by running:
@@ -38,6 +38,7 @@ When its done:
 Now run pyhton manage.py runserver to run the application.
 
 The developement server will be running at port 8000 on the localhost.
-Lets go [there]("http://127.0.0.1:8000/") 🛫
+Lets go [there](http://127.0.0.1:8000/) 🛫
+
 Expectations:
 !['home'](/static/images/home.png)
