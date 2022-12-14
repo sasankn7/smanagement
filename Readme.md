@@ -21,10 +21,11 @@ After installing the virtual environment, we need to create a virtual environmet
 
 Navigate to the folder where the project `course_management_system` is located.
 Your commandline should be something like this.
+
 !['venv'](/static/images/venv.png)
 
 run, `python -m virtualenv venv`
-then activate by running:
+Then activate by running:
 1. windows: `venv\scripts\activate`
 2.Linux|Mac: `source env/bin/activate`
 
