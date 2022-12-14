@@ -1,0 +1,52 @@
+
+{% extends "base.html" %}
+<style>
+    .container {
+        padding: 2rem 0rem;
+      }
+      
+      h4 {
+        margin: 2rem 0rem 1rem;
+      }
+      
+      .table-image {
+        td, th {
+          vertical-align: middle;
+        }
+      }
+      }
+</style>
+{% block content %}
+
+<div class="container">
+    <div class="row">
+      <div class="col-12">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Reg No</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Phone</th>
+             
+             
+            </tr>
+          </thead>
+          <tbody>
+            {% for student in students %}
+            <tr>
+              <th scope="row">{{ student.reg_no }}</th>
+              <td>{{student.name}}</td>
+              <td>{{student.email}}</td>
+              <td>{{student.phone}}</td>
+             
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

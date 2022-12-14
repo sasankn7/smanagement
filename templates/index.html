@@ -1,0 +1,55 @@
+
+{% extends "base.html" %}
+<style>
+    .container {
+        padding: 2rem 0rem;
+      }
+      
+      h4 {
+        margin: 2rem 0rem 1rem;
+      }
+      
+      .table-image {
+        td, th {
+          vertical-align: middle;
+        }
+      }
+      }
+</style>
+{% block content %}
+
+<div class="container">
+    <div class="row">
+      <div class="col-12">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Course ID</th>
+              <th scope="col">Course Title</th>
+              <th scope="col">Instractor Name</th>
+              <th scope="col">Capacity</th>
+             
+            </tr>
+          </thead>
+          <tbody>
+            {% for course in courses %}
+            <tr>
+              <th scope="row">{{ course.course_id }}</th>
+              <td>{{course.course_title}}</td>
+              <td>{{course.instractor_name}}</td>
+              <td>{{course.capacity}}</td>
+              <td><a href="{% url 'course:update' course.pk %}"><button type="button" class="btn btn-success"><i class="far fa-trash-alt"></i>Upadate Course</button></a> </td>
+              <td><a href="{% url 'course:delete' course.pk %}"><button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i>Delete Course</button></a> </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <td>
+              <a href="{% url 'course:add' %}"><button type="button" class="btn btn-primary"><i class="far fa-eye">Add Course</i></button></a>
+              
+              </td>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
