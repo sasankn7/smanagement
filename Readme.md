@@ -38,6 +38,6 @@ When its done:
 Now run pyhton manage.py runserver to run the application.
 
 The developement server will be running at port 8000 on the localhost.
-Lets go ['there']('http://127.0.0.1:8000/') 🛫
+Lets go [there]("http://127.0.0.1:8000/") 🛫
 Expectations:
 !['home']('.\static\images\home.png')
